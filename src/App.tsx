@@ -10,19 +10,19 @@ export const App: React.FC = () => {
   const loadAllGoods = useCallback(() => {
     getAll()
       .then(setGoods)
-      .catch(() => {})
+      .catch(() => {});
   }, []);
 
   const loadFiveGoods = useCallback(() => {
     get5First()
       .then(setGoods)
-      .catch(() => {})
+      .catch(() => {});
   }, []);
 
   const loadRedGoods = useCallback(() => {
     getRedGoods()
       .then(setGoods)
-      .catch(() => {})
+      .catch(() => {});
   }, []);
 
   return (
